@@ -1,12 +1,25 @@
 package exercises
 
+import "strings"
+
 // Capitalize erwartet ein Wort, das mit einem Buchstaben von `a` bis `z`
 // beginnt, und liefert es mit großem Anfangsbuchstaben.
 // Ein leeres Wort bleibt leer.
-//
-// TODO
 func Capitalize(word string) string {
-	return ""
+	// Hinweis:
+	// - `word[:1]` ist der erste Buchstabe, `word[1:]` der Rest.
+	// - Im Paket `strings` gibt es eine Funktion für Großbuchstaben.
+	// - Was passiert mit `word[:1]` bei einem leeren Wort?
+
+	if word == "" {
+		return ""
+	}
+	return strings.ToUpper(word[:1]) + word[1:]
+	// Anmerkung:
+	// Erster Buchstabe:
+	// `word[:1]` ist das erste Byte des Strings. Das genügt hier, weil
+	// das Wort mit `a` bis `z` beginnt. Ein Umlaut wie `ü` besteht
+	// dagegen aus zwei Bytes.
 }
 
 // NumberWord erwartet eine Zahl von `0` bis `999 999 999` und liefert ihr
@@ -16,8 +29,10 @@ func Capitalize(word string) string {
 // erweitern Sie die Funktion, sobald `BelowMillion` und `BelowBillion`
 // fertig sind (Tests `ExampleNumberWord_sixDigits` und
 // `ExampleNumberWord_nineDigits`).
-//
-// TODO
 func NumberWord(n int) string {
-	return ""
+	// Hinweis:
+	// - Für Zahlen bis `999` genügen `BelowThousand` und `Capitalize`.
+	// - Für größere Zahlen ersetzen Sie später nur `BelowThousand`.
+
+	return Capitalize(BelowBillion(n))
 }
