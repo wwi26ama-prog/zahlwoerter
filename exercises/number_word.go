@@ -6,6 +6,11 @@ package exercises
 //
 // TODO
 func Capitalize(word string) string {
+	// Hinweis:
+	// - `word[:1]` ist der erste Buchstabe, `word[1:]` der Rest.
+	// - Im Paket `strings` gibt es eine Funktion für Großbuchstaben.
+	// - Was passiert mit `word[:1]` bei einem leeren Wort?
+
 	return ""
 }
 
@@ -19,5 +24,9 @@ func Capitalize(word string) string {
 //
 // TODO
 func NumberWord(n int) string {
+	// Hinweis:
+	// - Für Zahlen bis `999` genügen `BelowThousand` und `Capitalize`.
+	// - Für größere Zahlen ersetzen Sie später nur `BelowThousand`.
+
 	return ""
 }

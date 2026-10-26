@@ -6,5 +6,12 @@ package exercises
 //
 // TODO
 func BelowMillion(n int) string {
+	// Hinweis:
+	// Teilen Sie die Zahl in Dreiergruppen auf: `123456` besteht aus
+	// `123` Tausendern und dem Rest `456`.
+	// - Für jede Gruppe gibt es schon `BelowThousand`.
+	// - Der Rest geht genauso wie in `BelowThousand`, nur mit `1000`
+	//   und "tausend" statt `100` und "hundert".
+
 	return ""
 }

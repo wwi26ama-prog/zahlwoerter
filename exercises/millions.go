@@ -8,5 +8,11 @@ package exercises
 //
 // TODO
 func BelowBillion(n int) string {
+	// Hinweis:
+	// Das Muster aus `BelowMillion` wiederholt sich mit der nächsten
+	// Dreiergruppe, also mit `1000000`.
+	// - Unterschiede: Für genau eine Million heißt es "eine Million",
+	//   sonst "Millionen", und die Wörter sind durch Leerzeichen getrennt.
+
 	return ""
 }
